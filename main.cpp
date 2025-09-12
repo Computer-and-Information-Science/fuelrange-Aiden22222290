@@ -5,18 +5,23 @@ using namespace std;
 
 int main() {
   // TODO: Declare your variables, with comments for each
-  double mpg = 30.77;
-  double gallons = 4.87;
-  double maxFill = 18;
-  double percentFilled = (gallons/maxFill)*100;
+  double mpg;
+  double maxFill;
+  double percentFilled;
   double milesLeft;
   // TODO: Prompt for and input the required values
+  
+  cout << "How many gallons can the gas tank hold? ";
+  cin >> maxFill;
+  cout << "Whats the MPG of the vehicle? ";
+  cin >> mpg;
+  cout << "What percent is the tank filled? ";
+  cin >> percentFilled;
 
-  milesLeft = gallons*mpg;
+
+  milesLeft = (maxFill*mpg)*(percentFilled/100);
 
   cout << "The vehicle can be driven " << milesLeft << " miles on the remaining fuel." << endl;
-  cout << "The vehicle has " << percentFilled << "% of the tank filled.";
-
 
 
 
